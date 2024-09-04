@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/<randomString>')
 def returnBackwardsString(randomString):
-    #comment
+    
     return "".join(reversed(randomString))
 
 @app.route('/get-mode')
